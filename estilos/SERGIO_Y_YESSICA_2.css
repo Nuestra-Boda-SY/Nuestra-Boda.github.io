@@ -183,74 +183,77 @@ input[type="range"]::-webkit-slider-thumb {
 }
 
 /* Estilos de la historia de los novios */
-.historia2{
+.historia2 {
     width: 100%;
     display: flex;
+    flex-wrap: nowrap;   /* 🔑 Nunca se apilan */
     gap: 20px;
     justify-content: center;
     margin-bottom: 20px;
+    overflow-x: auto;    /* 🔑 Scroll horizontal si no cabe */
 }
 
 .titulo-historia2 {
-    display: flex;            /* Necesario para justify-content y align-items */
-    flex-direction: column;  /* Apila elementos verticalmente (h1 e img) */
-    justify-content: center;  /* Centra verticalmente (si hay espacio extra) */
-    align-items: center;      /* Centra horizontalmente */
-    width: 50%;
-    margin: 0 auto;          /* Centra el contenedor en su padre (horizontalmente) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+    align-items: center;      
+    width: 50%; /* Siempre ocupa la mitad */
+    margin: 0 auto;          
 }
 
 .titulo-historia2 h1 {
     color: #9c0720;
-    font-size: 52px;
+    font-size: clamp(18px, 4vw, 52px); /* Se adapta */
     font-family: 'Playfair Display', serif;
-    text-align: center;      /* Redundante (por el align-items del padre) pero no afecta */
-    margin-bottom: 40px;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .titulo-historia2 img {
-    width: 70%;
+    width: 80%; 
+    max-width: 350px;
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-    display: block;          /* Para que margin: auto funcione (si no usas flex) */
-    margin: 0 auto;          /* Alternativa si no usas flex en el contenedor */
+    display: block;
+    margin: 0 auto;  
 }
 
 .texto-historia2 {
-    width: 50%;
-    margin: auto; /* centra horizontalmente el bloque */
+    width: 50%; /* Siempre ocupa la otra mitad */
+    margin: auto;
     font-family: 'montserrat light', serif;
-    font-size: 24px;
+    font-size: clamp(12px, 2vw, 24px); /* 🔑 Texto adaptable */
     text-align: justify;
-
 }
 
-
-
-/*Fotos de secundaroas en la historia*/
+/* Fotos secundarias */
 .fotos-historia {
     width: 100%;
     display: flex;
-    flex-wrap: wrap; /* Por si no caben en pantallas pequeñas */
+    flex-wrap: nowrap;   /* 🔑 Siempre en fila */
     justify-content: center;
     align-items: center;
-    gap: 16px; /* Espacio entre imágenes */
-    margin-bottom: 80px;
+    gap: 10px; 
+    margin-bottom: 40px;
+    overflow-x: auto;    /* 🔑 Scroll horizontal si no entran */
 }
 
 .img1, .img2 {
-    width: 512px;
-    height: 288px; /* Tamaño fijo horizontal */
-    flex-shrink: 0;
+    width: 50%;          /* Cada foto ocupa mitad */
+    max-width: 512px;
+    height: auto;
+    flex-shrink: 1;      /* Se encogen si no caben */
 }
 
 .img1 img, .img2 img {
     width: 100%;
-    height: 100%;
-    object-fit: cover; /* Recorta sin deformar */
+    height: auto;
+    object-fit: cover; 
     border-radius: 12px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.2);
 }
+
 
 /*Estilos de las direcciones de la boda*/
 
@@ -412,16 +415,6 @@ input[type="range"]::-webkit-slider-thumb {
 
 
 
-
-@media (max-width: 1100px) {
-    .img1, .img2 {
-        width: 45%;
-        height: auto;
-        aspect-ratio: 16 / 9; /* Mantiene forma horizontal */
-    }
-}
-
-
 @media (max-width: 768px) {
     .banner {
         height: 452px; /* Más bajo en móvil */
@@ -467,23 +460,8 @@ input[type="range"]::-webkit-slider-thumb {
         font-size: 34px;
     }
 
-    .imagen-historia{
-        width: 100%;
-        margin-bottom: 20px;
-    }
 
-    .imagen-historia img{
-        width: 100%;
-    }
 
-    .texto-historia{
-        width: 100%;
-        font-family: 'montserrat light', serif;
-    }
-
-    .fotos-historia {
-        flex-wrap: wrap;
-    }
 
 
     /*Direcciones movil*/
