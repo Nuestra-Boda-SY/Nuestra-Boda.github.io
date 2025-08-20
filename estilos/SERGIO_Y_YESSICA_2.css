@@ -33,7 +33,7 @@
 /*Contenedor general o global que tendrá toda la información de la página por debajo de la imagen inicial*/
 .contenedor-global{
     width: 90%;
-    margin: 0px 20px;
+    margin: 0px 5%;
 }
 
 /*Estilos para los nombres de los novios*/
@@ -74,11 +74,11 @@
 .player {
     background: #fff;
     border: 2px solid #9c0720;
-    padding: 30px;
+    padding: 10px;
     border-radius: 24px;
     box-shadow: 0 8px 24px rgba(0,0,0,0.1);
     text-align: center;
-    width: 320px;
+    width: 100%;
 }
 
 .player h2 {
@@ -163,7 +163,7 @@ input[type="range"]::-webkit-slider-thumb {
     border-radius: 24px;
     /*box-shadow: 0 8px 24px rgba(0,0,0,0.1);*/
     text-align: center;
-    width: 600px;
+    width: 100%;
     height: 180px;
 }
 
@@ -245,8 +245,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .direcciones {
   width: 100%;
-  display: flex;
-  flex-direction: column;
+  display: block;
   gap: 30px;
   justify-content: center;
   align-items: center;
@@ -255,19 +254,20 @@ input[type="range"]::-webkit-slider-thumb {
 
 .direcciones h1{
     color: #9c0720;
-    font-size: 52px;
+    font-size: 40px;
     font-family: 'Playfair Display', serif;
     text-align: center;
 }
 
 .direcciones p{
     font-family: 'montserrat light', serif;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
 }
 
 .titulo-direccion {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .dires {
@@ -280,8 +280,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 .direccion1,
 .direccion2 {
-  width: 45%;
-  min-width: 300px; /* evita que se haga muy chiquito */
+  width: 100%;
   border: 2px solid #9c0720;
   padding: 20px;
   border-radius: 20px;
@@ -299,18 +298,26 @@ input[type="range"]::-webkit-slider-thumb {
 
 /* Bloque de imágenes */
 .direccion-fotos {
-  width: 100%;
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
+    width: 100%; 
+    display: flex; 
+    flex-wrap: wrap; /* Por si no caben en pantallas pequeñas */ 
+    justify-content: center; 
+    align-items: center; 
+    gap: 12px; /* Espacio entre imágenes */ 
+    margin-bottom: 80px;
 }
 
-.direccion-fotos img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 20px;
-  object-fit: cover;
+.imag1, .imag2 { 
+    width: 47.5%;
+    height: 90px; /* Tamaño fijo horizontal */ 
+    flex-shrink: 0; 
+} 
+.imag1 img, .imag2 img { 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; /* Recorta sin deformar */ 
+    border-radius: 8px; 
+    box-shadow: 0 8px 24px rgba(0,0,0,0.2); 
 }
 
 /*Seccion lluvia de sobres*/
@@ -422,7 +429,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     .contenedor-flex{
-        margin-bottom: 80px;
+        margin-bottom: 60px;
     }
 
     .cajita-musica{
@@ -431,7 +438,7 @@ input[type="range"]::-webkit-slider-thumb {
 
     .player{
         width: 100%;
-        padding: 20px;
+        padding: 12px;
     }
 
     .cuenta-regresiva{
@@ -479,75 +486,6 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     /*Direcciones movil*/
-
-    .dires {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .direccion1,
-    .direccion2 {
-        width: 90%; /* ocupa casi todo el ancho en móvil */
-    }
-
-    .texto-junto{
-        height: 100px;
-    }
-
-    .direccion-fotos {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .direccion-fotos img {
-        max-width: 90%;
-    }
-
-    /*
-    .dires {
-        flex-direction: column !important; /* Cambia de fila a columna */
-        /*align-items: center;    
-    }
-
-    .direccion1,
-    .direccion2 {
-        padding: 12px;
-        width: 90%;    
-        max-width: 500px; 
-    }
-
-    .direccion1 iframe,
-    .direccion2 iframe {
-        height: 300px; 
-    }
-
-    .direccion-fotos {
-        flex-wrap: wrap;
-    }
-
-    .imag1, .imag2 {
-        width: 100%;
-        aspect-ratio: 16 / 9;
-    }
-        */
-
-    /*
-    .dires {
-        display: block; /* se apilan verticalmente */
-    /*}*/
-
-    /*
-    .direccion1,
-    .direccion2 {
-        width: 100%;      /* ocupan todo el ancho del contenedor */
-        /*margin-bottom: 20px; /* espacio entre las tarjetas */
-        /*padding: 20px;    /* reduce padding para móviles */
-    /*}
-
-    .direccion1 iframe,
-    .direccion2 iframe {
-        height: 250px; /* reduce altura en móviles */
-    /*}*/
 
 
 
