@@ -32,8 +32,8 @@
 
 /*Contenedor general o global que tendrá toda la información de la página por debajo de la imagen inicial*/
 .contenedor-global{
-    width: 0% 90%;
-    margin: 0px 40px;
+    width: 90%;
+    margin: 0px 20px;
 }
 
 /*Estilos para los nombres de los novios*/
