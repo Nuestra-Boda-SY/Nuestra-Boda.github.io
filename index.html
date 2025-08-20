@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<HTML>
+    <HEAD>
+        <TITLE>Sergio y Yessica | BODA</TITLE>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+        <link rel="stylesheet" href="estilos/SERGIO_Y_YESSICA_2.css">
+        <!--Tipo de letra Playfair-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+        <!--Tipo de letra Montserrat-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
+    </HEAD>
+    <BODY>
+
+        <div class="banner">
+            <div class="banner-texto">
+                <p>27 / 09 / 2025</p>
+            </div>
+        </div>
+
+        <div class="contenedor-global">
+          <div class="nombres">
+            <div class="espo">
+              <h1>SERGIO</h1>
+            </div>
+            <div class="y">
+              <h1>&</h1>
+            </div>
+            <div class="espa">
+              <h1>YESSICA</h1>
+            </div>
+          </div>
+
+          <div class="contenedor-flex">
+            <!-- Cajita musical -->
+            <div class="cajita-musica">
+              <div class="player">
+                <h2>"Ahora ya somos uno"</h2>
+
+                <div class="controls">
+                  <button class="btn" onclick="togglePlay()">
+                    <svg id="icon-play" viewBox="0 0 64 64">
+                      <polygon points="16,12 52,32 16,52" />
+                    </svg>
+                    <svg id="icon-pause" viewBox="0 0 64 64" style="display: none;">
+                      <rect x="16" y="12" width="10" height="40" />
+                      <rect x="38" y="12" width="10" height="40" />
+                    </svg>
+                  </button>
+                </div>
+
+                <div class="progress-container">
+                  <span class="time" id="currentTime">00:00</span>
+                  <input type="range" id="progress" value="0" step="1" min="0" max="100" onchange="seekAudio(this.value)">
+                  <span class="time" id="duration">--:--</span>
+                </div>
+
+                <div class="credit">Sergio & Yessica 💕</div>
+              </div>
+
+              <audio id="audio">
+                <source src="cancion/sjjm_S_132.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+
+            <!-- Cuenta regresiva -->
+            <div class="cuenta-regresiva">
+              <h1>Cuenta regresiva</h1>
+              <div id="countdown" class="contador-regresivo">Cargando...</div>
+            </div>
+          </div>
+
+          <div class="historia2">
+            <div class="titulo-historia2">
+                <h1>Nuestra historia de amor</h1>
+                <img src="imagenes/img_yate.jpg">
+            </div>
+            <div class="texto-historia2">
+                <p>Hoy, después de tantas memorias construidas juntos, queremos celebrar el amor que nos ha traído hasta aquí, rodeados de quienes más queremos.</p>
+                <p>Si pudiera explicar Lo que siento con mi decisión sería como el cantar de los cantares 8:7, no hay tempestad, ni problema que no hayamos enfrentado en el noviazgo que hiciera que nos separemos por eso se que quiero pasar mi vida contigo ❤️</p>
+            </div>
+          </div>
+
+          <div class="fotos-historia">
+            <div class="img1">
+              <img src="imagenes/img-espejo.jpg">
+            </div>
+            <div class="img2">
+              <img src="imagenes/img-manos-corazon.jpg">
+            </div>
+          </div>
+
+          <div class="direcciones">
+            
+            <div class="titulo-direccion">
+              <h1>Nuestra Boda</h1>
+              <p>27 de septiembre de 2025</p>
+            </div>
+
+            <div class="dires">
+              <div class="direccion1">
+                <h1>Discurso de bodas 4:00 pm</h1>
+                <p>Salón del Reino de los Testigos de Jehová</p>
+                <div class="texto-junto">
+                  <p>Salón "Los gemelos"</p>
+                  <p>Av. Puerto Juárez, Supermanzana 218, Manzana 16, Lote 13-15</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d440.26654730721293!2d-86.87365237623447!3d21.16166573874208!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2c9d6aa778df%3A0xe9c420582d59156!2sSal%C3%B3n%20del%20Reino%20de%20los%20Testigos%20de%20Jehov%C3%A1!5e1!3m2!1ses-419!2smx!4v1755049338740!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+
+              <div class="direccion2">
+                <h1>Recepción 6:00 pm - 9:00 pm</h1>
+                <div class="texto-junto2">
+                  <p>Marakame Cancún</p>
+                  <p>Av. Xpujil Sur, Supermanzana 19</p>
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d440.3170277887599!2d-86.82983202022128!3d21.144688463270594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4c2be500090aef%3A0xe77be98e7922deda!2sMarakame%20Canc%C3%BAn!5e1!3m2!1ses-419!2smx!4v1755053206929!5m2!1ses-419!2smx" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              </div>
+            </div>
+
+            <div class="direccion-fotos">
+              <div class="imag1">
+                <img src="imagenes/img_muelle-verde - copia.jpg">
+              </div>
+              <div class="imag2">
+                <img src="imagenes/img_frente-camara.jpg">
+              </div>
+            </div>
+
+          </div>
+
+          <div class="lluvia-sobres">
+            <h1>LLUVIA DE SOBRES</h1>
+            <p>El mayor obsequio es tu compañía.</p>
+            <p>Una aportación monetaria sería un gesto adicional muy valorado (Se colocará una caja en la recepción).</p>
+          </div>
+
+          <div class="confirmacion">
+            <h1>¡Cada vez falta menos!</h1>
+            <p>Esperamos contar con tu presencia.</p>
+            <a href="https://wa.me/5219983714444?text=Hola%2C%20Confirmo%20mi%20asistencia" target="_blank">
+              <button class="boton-neon">Confirmar</button>
+            </a>
+          </div>
+
+          <div class="carousel-container">
+            <div class="carousel-track">
+              <img src="imagenes/img_s1.jpg" alt="">
+              <img src="imagenes/img_s2.jpg" alt="">
+              <img src="imagenes/img_s3.jpg" alt="">
+              <img src="imagenes/img_s4.jpg" alt="">
+              <img src="imagenes/img_s5.jpg" alt="">
+              <img src="imagenes/img_s6.jpg" alt="">
+              <img src="imagenes/img_s7.jpg" alt="">
+              <img src="imagenes/img_s8.jpg" alt="">
+              <img src="imagenes/img_s9.jpg" alt="">
+              <img src="imagenes/img_s10.jpg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+        
+
+        <script>
+            // Establece la fecha objetivo (AAAA-MM-DD HH:MM:SS)
+            const fechaObjetivo = new Date("2025-09-27T00:00:00").getTime();
+
+            // Actualizar cada segundo
+            const intervalo = setInterval(() => {
+            const ahora = new Date().getTime();
+            const tiempoRestante = fechaObjetivo - ahora;
+
+            // Cálculo de días, horas, minutos y segundos
+            const dias = Math.floor(tiempoRestante / (1000 * 60 * 60 * 24));
+            const horas = Math.floor((tiempoRestante % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutos = Math.floor((tiempoRestante % (1000 * 60 * 60)) / (1000 * 60));
+            const segundos = Math.floor((tiempoRestante % (1000 * 60)) / 1000);
+
+            // Mostrar en el HTML
+            document.getElementById("countdown").innerHTML =
+                `${dias}d ${horas}h ${minutos}m ${segundos}s`;
+
+            // Cuando se llegue a la fecha
+            if (tiempoRestante < 0) {
+                clearInterval(intervalo);
+                document.getElementById("countdown").innerHTML = "¡El día ha llegado!";
+            }
+            }, 1000);
+
+
+            const audio = document.getElementById('audio');
+            const progress = document.getElementById('progress');
+            const iconPlay = document.getElementById('icon-play');
+            const iconPause = document.getElementById('icon-pause');
+            const currentTimeText = document.getElementById('currentTime');
+            const durationText = document.getElementById('duration');
+
+            function togglePlay() {
+                if (audio.paused) {
+                audio.play();
+                iconPlay.style.display = 'none';
+                iconPause.style.display = 'block';
+                } else {
+                audio.pause();
+                iconPlay.style.display = 'block';
+                iconPause.style.display = 'none';
+                }
+            }
+
+            audio.addEventListener('loadedmetadata', () => {
+                const duration = formatTime(audio.duration);
+                durationText.textContent = duration;
+            });
+
+            audio.addEventListener('timeupdate', () => {
+                const current = formatTime(audio.currentTime);
+                currentTimeText.textContent = current;
+                progress.value = (audio.currentTime / audio.duration) * 100;
+            });
+
+            function seekAudio(value) {
+                audio.currentTime = (value / 100) * audio.duration;
+            }
+
+            function formatTime(seconds) {
+                const mins = Math.floor(seconds / 60);
+                const secs = Math.floor(seconds % 60);
+                return `${mins < 10 ? '0'+mins : mins}:${secs < 10 ? '0'+secs : secs}`;
+            }
+
+        </script>
+
+    </BODY>
+</HTML>
