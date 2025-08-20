@@ -467,7 +467,7 @@ input[type="range"]::-webkit-slider-thumb {
 
     .img1, .img2 { 
         width: 47.5%;
-        height: 70px; /* Tamaño fijo horizontal */ 
+        height: 80px; /* Tamaño fijo horizontal */ 
         flex-shrink: 0; 
     } 
     .img1 img, .img2 img { 
