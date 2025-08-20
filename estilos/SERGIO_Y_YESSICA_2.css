@@ -324,93 +324,7 @@ input[type="range"]::-webkit-slider-thumb {
   object-fit: cover;
 }
 
-/*
-.direcciones{
-    width: 100%;
-    display: block;
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 20px
-}
-
-.direcciones h1{
-    color: #9c0720;
-    font-size: 52px;
-    font-family: 'Playfair Display', serif;
-    text-align: center;
-}
-
-.direcciones p{
-    font-family: 'montserrat light', serif;
-    font-size: 24px;
-    text-align: center;
-}
-
-.titulo-direccion{
-    margin-bottom: 32px;
-}
-
-.dires{
-    width: 100%;
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    margin-bottom: 20px
-}
-
-.direccion1{
-    width: 50%;
-    border: 2px solid #9c0720;
-    padding: 30px;
-    border-radius: 24px;
-    justify-content: center;
-}
-
-.direccion2{
-    width: 50%;
-    border: 2px solid #9c0720;
-    padding: 30px;
-    border-radius: 24px;
-}
-
-.direccion1 iframe,
-.direccion2 iframe {
-    width: 100%;   /* ocupa todo el ancho del div */
-    /*height: 400px; /* altura base para escritorio */
-    /*display: block;
-    margin: 0 auto;
-}
-
-.texto-junto2{
-    height: 81.6px;
-    text-align: center;
-}
-
-.direccion-fotos{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap; /* Por si no caben en pantallas pequeñas */
-    /*justify-content: center;
-    align-items: center;
-    gap: 16px; 
-    margin-bottom: 80px;
-}
-
-.imag1, .imag2 {
-    width: 512px;
-    height: 288px; /* Tamaño fijo horizontal */
-    /*flex-shrink: 0;
-}
-
-.imag1 img, .imag2 img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Recorta sin deformar */
-    /*border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.2);
-}
-*/
-
+/*Seccion lluvia de sobres*/
 .lluvia-sobres{
     margin-bottom: 32px;
 }
@@ -428,6 +342,7 @@ input[type="range"]::-webkit-slider-thumb {
     text-align: center;
 }
 
+/*Confirmacion de asistencia*/
 .confirmacion{
     margin-bottom: 32px;
     text-align: center;
@@ -464,10 +379,7 @@ input[type="range"]::-webkit-slider-thumb {
   box-shadow: 0 0 20px #9c0720, 0 0 80px #9c0720 inset;
 }
 
-
-
-
-
+/*Carrusel de imagenes*/
 .carousel-container {
   max-width: 900px; /* ancho máximo */
   margin: 40px auto; /* centrado y espacio arriba/abajo */
@@ -555,23 +467,6 @@ input[type="range"]::-webkit-slider-thumb {
         font-size: 34px;
     }
 
-    .historia{
-    width: 100%;
-    display: block;
-    }
-
-    .titulo-historia{
-        width:100%;
-        margin-bottom: 20px;
-    }
-
-    .titulo-historia h1{
-        color: #9c0720;
-        font-size: 44px;
-        font-family: 'Playfair Display', serif;
-        text-align: center;
-    }
-
     .imagen-historia{
         width: 100%;
         margin-bottom: 20px;
@@ -590,10 +485,6 @@ input[type="range"]::-webkit-slider-thumb {
         flex-wrap: wrap;
     }
 
-    .img1, .img2 {
-        width: 100%;
-        aspect-ratio: 16 / 9;
-    }
 
     /*Direcciones movil*/
 
