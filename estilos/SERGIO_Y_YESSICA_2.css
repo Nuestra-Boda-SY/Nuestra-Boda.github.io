@@ -216,7 +216,9 @@ input[type="range"]::-webkit-slider-thumb {
     width: 50%; 
     margin: auto; /* centra horizontalmente el bloque */ 
     font-family: 'montserrat light', serif; 
-    font-size: 24px; text-align: justify; } /*Fotos de secundarias en la historia*/ 
+    font-size: 24px; 
+    text-align: justify; 
+} /*Fotos de secundarias en la historia*/ 
 .fotos-historia { 
     width: 100%; 
     display: flex; 
@@ -454,11 +456,11 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     .historia2 h1{
-        font-size: 34px;
+        font-size: 36px;
     }
 
     .historia2 p{
-        font-size: 14px;
+        font-size: 16px;
     }
 
     .fotos-historia { 
