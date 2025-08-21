@@ -328,14 +328,14 @@ input[type="range"]::-webkit-slider-thumb {
 
 .lluvia-sobres h1{
     color: #9c0720;
-    font-size: 52px;
+    font-size: 40px;
     font-family: 'Playfair Display', serif;
     text-align: center;
 }
 
 .lluvia-sobres p{
     font-family: 'montserrat light', serif;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -347,14 +347,14 @@ input[type="range"]::-webkit-slider-thumb {
 
 .confirmacion h1{
     color: #9c0720;
-    font-size: 52px;
+    font-size: 40px;
     font-family: 'Playfair Display', serif;
     text-align: center;
 }
 
 .confirmacion p{
     font-family: 'montserrat light', serif;
-    font-size: 24px;
+    font-size: 20px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -369,7 +369,7 @@ input[type="range"]::-webkit-slider-thumb {
   text-shadow: 0 0 5px #9c0720;
   box-shadow: 0 0 10px #9c0720, 0 0 40px #9c0720 inset;
   cursor: pointer;
-  font-size: 18px;
+  font-size: 20px;
   transition: 0.3s;
 }
 .boton-neon:hover {
@@ -404,6 +404,21 @@ input[type="range"]::-webkit-slider-thumb {
 @keyframes scroll {
   0%   { transform: translateX(0); }
   100% { transform: translateX(-1000%); } /* 10 imágenes → 1000% */
+}
+
+.fondo {
+    background-color: rgb(184, 181, 181);
+    background-image: url("../imagenes/img_fondo.jpeg");
+    background-size: contain;  /* Mantiene toda la imagen visible */
+    background-repeat: no-repeat;
+    background-position: center top; /* Centrado horizontal, pegado arriba */
+    width: 100%;
+    height: auto; /* Se ajusta automáticamente */
+    min-height: 200px; /* Opcional: altura mínima */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
 }
 
 
