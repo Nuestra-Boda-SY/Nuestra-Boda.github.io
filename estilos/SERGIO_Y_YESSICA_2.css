@@ -274,9 +274,10 @@ input[type="range"]::-webkit-slider-thumb {
 .dires {
   width: 100%;
   display: flex;
-  gap: 20px;
+  gap: 28px;
   justify-content: center;
   flex-wrap: wrap; /* ayuda a que baje solo cuando no cabe */
+  margin-bottom: 20px;
 }
 
 .direccion1,
@@ -331,6 +332,7 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 40px;
     font-family: 'Playfair Display', serif;
     text-align: center;
+    margin-bottom: 12px;
 }
 
 .lluvia-sobres p{
@@ -350,6 +352,7 @@ input[type="range"]::-webkit-slider-thumb {
     font-size: 40px;
     font-family: 'Playfair Display', serif;
     text-align: center;
+    margin-bottom: 12px;
 }
 
 .confirmacion p{
@@ -414,7 +417,7 @@ input[type="range"]::-webkit-slider-thumb {
     background-position: center top; /* Centrado horizontal, pegado arriba */
     width: 100%;
     height: auto; /* Se ajusta automáticamente */
-    min-height: 200px; /* Opcional: altura mínima */
+    min-height: 160px; /* Opcional: altura mínima */
     display: flex;
     justify-content: center;
     align-items: center;
