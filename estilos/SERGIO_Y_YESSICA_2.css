@@ -61,7 +61,8 @@
     gap: 40px;
     flex-wrap: wrap;
     padding: 20px;
-    margin: 40px 0px;
+    margin-top: 40px;
+    margin-bottom: 30px;
 }
 
 /* Cajita musical */
@@ -324,7 +325,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 /*Seccion lluvia de sobres*/
 .lluvia-sobres{
-    margin-bottom: 32px;
+    margin-bottom: 44px;
 }
 
 .lluvia-sobres h1{
@@ -343,7 +344,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 /*Confirmacion de asistencia*/
 .confirmacion{
-    margin-bottom: 32px;
+    margin-bottom: 44px;
     text-align: center;
 }
 
@@ -417,7 +418,7 @@ input[type="range"]::-webkit-slider-thumb {
     background-position: center top; /* Centrado horizontal, pegado arriba */
     width: 100%;
     height: auto; /* Se ajusta automáticamente */
-    min-height: 160px; /* Opcional: altura mínima */
+    min-height: 200px; /* Opcional: altura mínima */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -448,7 +449,7 @@ input[type="range"]::-webkit-slider-thumb {
     }
 
     .contenedor-flex{
-        margin-bottom: 60px;
+        margin-bottom: 40px;
     }
 
     .cajita-musica{
