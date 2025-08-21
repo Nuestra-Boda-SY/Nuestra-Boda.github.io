@@ -28,6 +28,7 @@
     justify-content: center;
     align-items: center;
     position: relative; /* Esta línea es importante para el recuadro */
+    margin-bottom: 16px;
 }
 
 /*Contenedor general o global que tendrá toda la información de la página por debajo de la imagen inicial*/
@@ -395,7 +396,7 @@ input[type="range"]::-webkit-slider-thumb {
 /*Carrusel de imagenes*/
 .carousel-container {
   max-width: 900px; /* ancho máximo */
-  margin: 40px auto; /* centrado y espacio arriba/abajo */
+  margin: 20px auto; /* centrado y espacio arriba/abajo */
   overflow: hidden;
   border-radius: 10px;
   background-color: #000; /* fondo para barras laterales */
