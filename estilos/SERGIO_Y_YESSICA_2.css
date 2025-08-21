@@ -325,7 +325,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 /*Seccion lluvia de sobres*/
 .lluvia-sobres{
-    margin-bottom: 44px;
+    margin-bottom: 60px;
 }
 
 .lluvia-sobres h1{
@@ -344,7 +344,7 @@ input[type="range"]::-webkit-slider-thumb {
 
 /*Confirmacion de asistencia*/
 .confirmacion{
-    margin-bottom: 44px;
+    margin-bottom: 60px;
     text-align: center;
 }
 
