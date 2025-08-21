@@ -28,7 +28,7 @@
     justify-content: center;
     align-items: center;
     position: relative; /* Esta línea es importante para el recuadro */
-    margin-bottom: 16px;
+    margin-bottom: 20px;
 }
 
 /*Contenedor general o global que tendrá toda la información de la página por debajo de la imagen inicial*/
